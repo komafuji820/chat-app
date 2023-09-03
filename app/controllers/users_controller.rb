@@ -3,7 +3,8 @@ class UsersController < ApplicationController
   end
 
   def update
-    current_user.update(user_params)
+    binding.pry
+    User.update(user_params)
   end
 
   private
