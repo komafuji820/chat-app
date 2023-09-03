@@ -3,8 +3,11 @@ class UsersController < ApplicationController
   end
 
   def update
-    binding.pry
-    User.update(user_params)
+    if User.update(user_params) #current_user?#
+      redirect_to root_path
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
   private
