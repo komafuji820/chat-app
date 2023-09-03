@@ -1,0 +1,53 @@
+/* 全体 */
+.wrapper{
+  display: flex;
+}
+
+/* サイドバー */
+/* サイドバー全体 */
+.side_bar{
+  height: 100vh;
+  width: 300px;
+  background-color: #253141;
+}
+
+/* サイドバー・ヘッダー */
+.side_bar_header{
+  height: 100px;
+  padding: 0 20px;
+}
+
+/* サイドバー・ルーム一覧 */
+.rooms{
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  padding: 0 20px;
+}
+
+/* メイン */
+/* チャット全体 */
+.chat{
+  height: 100vh;
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+}
+
+/* チャットヘッダー */
+.chat_header{
+  height: 100px;
+  padding: 0 40px;
+}
+
+/* チャットメイン・メッセージ一覧 */
+.messages{
+  height: calc(100vh - 100px - 90px);
+  background-color: #fafafa;
+  padding: 46px 40px 0;
+}
+
+/* チャット・入力フォーム */
+.form{
+  height: 90px;
+  background-color: #dddddd;
+  padding: 20px 40px;
+}
