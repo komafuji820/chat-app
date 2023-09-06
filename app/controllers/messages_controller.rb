@@ -12,7 +12,7 @@ class MessagesController < ApplicationController
     if @message.save
       redirect_to room_messages_path(@room.id)
     else
-      @messages = @room.message.includes(:user)
+      @messages = @room.messages.includes(:user)
       render :index, status: :unprocessable_entity
     end
   end
