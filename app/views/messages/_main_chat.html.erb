@@ -11,71 +11,7 @@
   </div>
 </div>
 <div class='messages'>
-  <div class='message'>
-    <div class='message_name_date'>
-      <div class='message_name'>
-        Tom <!-- 仮置き-->
-      </div>
-      <div class='message_date'>
-        2020/3/31(wed) 12:43:30 <!-- 仮置き-->
-      </div>
-    </div>
-    <div class='message_content'>
-      おはよう <!-- 仮置き-->
-    </div>
-  </div>
-  <div class='message'>
-    <div class='message_name_date'>
-      <div class='message_name'>
-        Tom <!-- 仮置き-->
-      </div>
-      <div class='message_date'>
-        2020/3/31(wed) 12:43:30 <!-- 仮置き-->
-      </div>
-    </div>
-    <div class='message_content'>
-      おはよう <!-- 仮置き-->
-    </div>
-  </div>
-  <div class='message'>
-    <div class='message_name_date'>
-      <div class='message_name'>
-        Tom <!-- 仮置き-->
-      </div>
-      <div class='message_date'>
-        2020/3/31(wed) 12:43:30 <!-- 仮置き-->
-      </div>
-    </div>
-    <div class='message_content'>
-      おはよう <!-- 仮置き-->
-    </div>
-  </div>
-  <div class='message'>
-    <div class='message_name_date'>
-      <div class='message_name'>
-        Tom <!-- 仮置き-->
-      </div>
-      <div class='message_date'>
-        2020/3/31(wed) 12:43:30 <!-- 仮置き-->
-      </div>
-    </div>
-    <div class='message_content'>
-      おはよう <!-- 仮置き-->
-    </div>
-  </div>
-  <div class='message'>
-    <div class='message_name_date'>
-      <div class='message_name'>
-        Tom <!-- 仮置き-->
-      </div>
-      <div class='message_date'>
-        2020/3/31(wed) 12:43:30 <!-- 仮置き-->
-      </div>
-    </div>
-    <div class='message_content'>
-      おはよう <!-- 仮置き-->
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages%>
 </div>
 <%= form_with(model: [@room, @message], class: 'form', local: true) do |f| %>
   <div class="form-input">
