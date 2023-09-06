@@ -6,7 +6,7 @@
   </div>
   <div class='right_header'>
     <div class='chat_exit_btn'>
-      <a href="#">チャットを終了する</a>
+      <%= link_to 'チャットを終了する', room_path(@room.id), data:{turbo_method: :delete} %>
     </div>
   </div>
 </div>
