@@ -3,38 +3,15 @@
     <%= link_to "#{current_user.name}", edit_user_path(current_user.id)%>
   </div>
   <div class='room_create_btn'>
-    <a href='#'>チャットを作成する</a>
+    <%= link_to 'チャットを作成する', new_room_path %>
   </div>
 </div>
 <div class='rooms'>
   <div class='room'>
-    <div class='room_name'><a href='#'>全体チャット</a></div> <!--ルーム名は仮置き-->
-  </div>
-  <div class='room'>
-    <div class='room_name'><a href='#'>チームA</a></div>
-  </div>
-  <div class='room'>
-    <div class='room_name'><a href='#'>チームB</a></div>
-  </div>
-  <div class='room'>
-    <div class='room_name'><a href='#'>チームB</a></div>
-  </div>
-  <div class='room'>
-    <div class='room_name'><a href='#'>チームB</a></div>
-  </div>
-  <div class='room'>
-    <div class='room_name'><a href='#'>チームB</a></div>
-  </div>
-  <div class='room'>
-    <div class='room_name'><a href='#'>チームB</a></div>
-  </div>
-  <div class='room'>
-    <div class='room_name'><a href='#'>チームB</a></div>
-  </div>
-  <div class='room'>
-    <div class='room_name'><a href='#'>チームB</a></div>
-  </div>
-  <div class='room'>
-    <div class='room_name'><a href='#'>チームB</a></div>
+    <% current_user.rooms.each do |room| %>
+    <div class='room_name'>
+      <%= link_to room.name, '#' %>
+    </div>
+    <% end %>
   </div>
 </div>
